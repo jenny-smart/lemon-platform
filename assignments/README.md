@@ -1,22 +1,29 @@
-# Assignments
+# Lemon Platform Assignments
 
-本資料夾用於放置 Lemon Platform 的任務分派、工作包與交接說明。
+此資料夾存放給 AI Worker 或 Codex 執行的工作單。
 
 ## 使用方式
 
-每個 assignment 應描述任務背景、負責範圍、交付物、驗收標準與注意事項。若任務可由 AI Agent 協助，應附上明確輸入與限制。
+每個 AI 視窗開始前，請先閱讀：
 
-## 命名建議
+1. docs/project/PROJECT_CONTEXT.md
+2. docs/INDEX.md
+3. docs/reference/REPOSITORIES.md
+4. 對應 Assignment
 
-檔名建議使用日期、中心與任務名稱，例如：
+## 分類
 
-- `2026-07-service-center-audit.md`
-- `2026-07-finance-export-review.md`
+- repository：Repository 分析任務
+- feature：功能盤點任務
+- workflow：流程分析任務
+- ui：UI 分析任務
+- core：共用 Core 分析任務
+- qa：測試任務
 
-## 維護規則
+## 規則
 
-本資料夾不放程式碼、不放私密資料、不放未遮蔽個資。已完成任務可保留作為交接紀錄，但需標示狀態。
-
----
-狀態：Draft
-版本：0.1
+- 一次只執行一個 Assignment
+- 不自行修改架構
+- 不自行新增功能
+- 不修改未被指定的 Repository
+- 所有輸出使用繁體中文
