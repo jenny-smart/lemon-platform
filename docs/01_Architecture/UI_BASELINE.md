@@ -1,40 +1,54 @@
-# UI 基準說明
+# UI 基準
 
-狀態：已確認
-版本：0.1
+## 基準決策
 
-## 決策
+Lemon Platform 的介面設計以目前的 `tool-system` Streamlit 介面為主要基準。參考入口為：https://tool-system.streamlit.app/
 
-Lemon Platform 的介面設計，以目前的 tool-system Streamlit 介面為基礎。
-
-參考網站：
-
-https://tool-system.streamlit.app/
+此決策代表平台初期不重新設計一套完全不同的介面，而是先沿用既有使用者已熟悉的操作節奏、頁面結構與元件風格。
 
 ## 適用範圍
 
-後續所有 Lemon Platform 相關介面，包括：
+本 UI 基準適用於後續所有 Lemon Platform 相關介面，包括：
 
-- service-lemonsystem
-- orders-system 整合頁面
-- memo-system 整合頁面
-- salary-system 整合頁面
-- tool-system 整合頁面
-- 未來 lemon-platform 主入口
+- `service-lemonsystem` 相關整合頁面。
+- `orders-system` 整合頁面。
+- `memo-system` 整合頁面。
+- `salary-system` 整合頁面。
+- `tool-system` 整合頁面。
+- 未來 Lemon Platform 主入口。
 
-都應優先沿用 tool-system 的整體操作感、頁面節奏與視覺結構。
+若某個新功能需要偏離此基準，應先記錄原因與影響範圍。
 
 ## 設計原則
 
-1. 以 tool-system 的操作體驗為主要基準。
-2. 不重新設計一套完全不同的 UI。
-3. 新頁面需維持相近的 Sidebar、分頁、按鈕、提示訊息與卡片式區塊風格。
-4. 每個功能頁應優先考慮「營運人員快速操作」，而不是展示型介面。
-5. UI 改版前，需先確認是否會破壞現有 tool-system 使用習慣。
+平台 UI 應優先服務營運人員快速完成任務，而不是做成展示型介面。頁面要讓使用者清楚知道目前在哪個中心、正在看哪種資料、下一步可做什麼。
+
+基本原則如下：
+
+- 使用一致的側邊導覽、頁面標題、分頁與狀態提示。
+- 表格、篩選、輸出與操作按鈕維持相近邏輯。
+- 重要警示與錯誤訊息要清楚、可追蹤、可修正。
+- 不為單一功能建立與平台完全不同的互動模式。
+- 改版前需評估是否破壞既有使用習慣。
+
+## 元件方向
+
+初期應整理並沿用下列元件模式：
+
+- Sidebar：中心切換、主要頁面導覽與權限提示。
+- Tabs：同一工作流程中的不同資料視角。
+- Cards：摘要、待處理事項與關鍵狀態。
+- Tables：訂單、付款、薪資、名單與查詢結果。
+- Buttons：明確操作，例如查詢、匯出、更新與確認。
+- Alerts：錯誤、警告、成功訊息與人工確認提醒。
+- Logs：操作紀錄、同步結果與自動化執行狀態。
 
 ## 後續工作
 
-- 由 UI Team 分析 tool-system 目前介面。
-- 建立 UI 元件清單。
-- 整理 Sidebar、Card、Button、Table、Status、Log 的共用規格。
-- 後續建立正式 UI Design System。
+後續應由 UI 維護者盤點 `tool-system` 目前介面，整理共用版面、元件狀態、文字語氣與互動規則，並逐步形成正式的 UI Design System。
+
+在 Design System 完成前，本文件作為 Lemon Platform 的 UI 判斷基準。
+
+---
+狀態：Draft
+版本：0.1
