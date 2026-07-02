@@ -1,36 +1,29 @@
-# Lemon Platform
+# Lemon Platform Assignments
 
-Lemon Platform 是檸檬家事的整合營運平台專案控制中心。
+此資料夾存放給 AI Worker 或 Codex 執行的工作單。
 
-此 Repository 不直接承載主要業務程式碼，而是用來管理：
+## 使用方式
 
-- 系統架構
-- 專案文件
-- Repository 對照
-- AI 工作指派
-- Roadmap
-- Backlog
-- 架構決策
+每個 AI 視窗開始前，請先閱讀：
 
-## 目前整合範圍
-
-- service-lemonsystem
-- orders-system
-- memo-system
-- tool-system
-- salary-system
-
-## 重要決策
-
-Lemon Platform 的 UI 基準為：
-
-https://tool-system.streamlit.app/
-
-## 如何開始
-
-請先閱讀：
-
-1. docs/INDEX.md
-2. docs/project/PROJECT_CONTEXT.md
+1. docs/project/PROJECT_CONTEXT.md
+2. docs/INDEX.md
 3. docs/reference/REPOSITORIES.md
-4. assignments/README.md
+4. 對應 Assignment
+
+## 分類
+
+- repository：Repository 分析任務
+- feature：功能盤點任務
+- workflow：流程分析任務
+- ui：UI 分析任務
+- core：共用 Core 分析任務
+- qa：測試任務
+
+## 規則
+
+- 一次只執行一個 Assignment
+- 不自行修改架構
+- 不自行新增功能
+- 不修改未被指定的 Repository
+- 所有輸出使用繁體中文
